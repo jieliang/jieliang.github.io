@@ -26,7 +26,7 @@ After cleaning data from each source, I then joined them by school name in one t
 * Transformation #3. Convert school rankings to z scores.
 
 
-Once data preparation was done, I started the model selection process. The metric I used was MAE(mean absolute error) for best intepretability. I experimented with linear and quadratic ridge and lasso regression, using the grid search CV function in Sci kit-Learn to optimize the tuning parameter alpha. The model that got the best score was linear lasso regression with alpha = 0.05 on data transformations #3, so that was my final selection.
+Once data preparation was done, I started the model selection process. The metric I used was MAE(mean absolute error) for best intepretability. I experimented with linear and quadratic ridge and lasso regression, using grid search CV function from Sci kit-Learn to optimize tuning parameter alpha. The model that got the best score was linear lasso regression with alpha = 0.05 on data transformations #3, so that was my final selection.
 
 When evaluating the final model, I examined the risiduals vs.prediction plot. The plot showed a clear linear trend, indicating some variation in target (roi) was not explained by the model and instead 'leaked' into the residuals. In fact, in another plot of prediction vs. mean, I found that the prediction was not much better than just predicting the mean.
 
@@ -36,5 +36,5 @@ So, What's the main takeaway from my investigation?
 
 __Don't base college decision on rankings if your goal is to maximize ROI!__
 
-Will I keep pondering about this question? You bet! But next time, I will try adding new features like college majors or using different models to see if I can achieve a better prediction.
+Will I keep pondering about this question? You bet! But next time, I will try adding new features like college majors or using different models to see if better prediction can be achieved.
 
