@@ -15,20 +15,20 @@ For rankings, there are many sources, including prominent ones such as US news a
 
 For ROI, there isn't a perfect source. The best available and most widely used is from [payscale.com](https://www.payscale.com/college-roi), despite its flaws such as selection bias as data is self reported by users or that 4 year completion rate is not accounted for. So this is where I got ROI information.
 
-As to endowment, I chose [endowments.com](http://endowments.com/) that has the most extensive list of schools (800+) http://endowments.com/. 
+As to endowment, I chose [endowments.com](http://endowments.com/) for it has the most extensive list of schools (800+). 
 
 After cleaning data from each source, I then joined them by school name in one table. By examining the characteristics of each column, I decided to try three different data transformations to see which would work best for modeling.
 
-Transformation #1. Convert school rankings to bins.
-Transformation #2. Convert school rankings to exponential decay
-Transformation #3. Convert school rankings to z scores.
+* Transformation #1. Convert school rankings to bins.
+* Transformation #2. Convert school rankings to exponential decay
+* Transformation #3. Convert school rankings to z scores.
 
 
-Once data preparation was done, I started the model selection phase. The metric I used was MAE(mean absolute error) for best intepretability. I experimented with linear and quadratic ridge and lasso regression, using the grid search CV function in Sci kit-Learn to optimize the tuning parameter alpha. The model that got the best score was linear lasso regression with alpha = 0.05 on data transformations #3, so that was my final selection.
+Once data preparation was done, I started the model selection process. The metric I used was MAE(mean absolute error) for best intepretability. I experimented with linear and quadratic ridge and lasso regression, using the grid search CV function in Sci kit-Learn to optimize the tuning parameter alpha. The model that got the best score was linear lasso regression with alpha = 0.05 on data transformations #3, so that was my final selection.
 
-When accessing the final model, I examined the risiduals vs.prediction plot. The plot showed a clear linear trend, indicating some variation in target (roi) was not able to be explained by the model and instead 'leaked' into the residuals. In fact, in another plot of prediction vs. mean, I found that the prediction was not much better than just predicting the mean.
+When evaluating the final model, I examined the risiduals vs.prediction plot. The plot showed a clear linear trend, indicating some variation in target (roi) was not explained by the model and instead 'leaked' into the residuals. In fact, in another plot of prediction vs. mean, I found that the prediction was not much better than just predicting the mean.
 
-To improve the prediction, for next steps we can try adding different features like majors or using different models.
+To improve the prediction, for next steps I will try adding different features like majors or using different models.
 
 So, What the main takeaway from my investigation?
 
