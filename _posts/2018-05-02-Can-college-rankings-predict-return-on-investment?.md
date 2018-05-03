@@ -28,8 +28,11 @@ Once data preparation was done, I started the model selection process. The metri
 
 When evaluating the final model, I examined the risiduals vs.prediction plot. The plot showed a clear linear trend, indicating some variation in target (roi) was not explained by the model and instead 'leaked' into the residuals. In fact, in another plot of prediction vs. mean, I found that the prediction was not much better than just predicting the mean.
 
-To improve the prediction, for next steps I will try adding different features like majors or using different models.
+__In other words, the combined information of college rankings, cost and endowment is not sufficient for ROI forecast.__
 
-So, What the main takeaway from my investigation?
+So, What's the main takeaway from my investigation?
 
 __Don't base college decision on rankings if your goal is to maximize ROI!__
+
+Will I keep pondering about this question? You bet! But next time, I will try adding new features like college majors or using different models to see if I can achieve a better prediction.
+
