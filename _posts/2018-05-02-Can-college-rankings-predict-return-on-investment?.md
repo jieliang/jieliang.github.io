@@ -13,7 +13,7 @@ The cost, of course is a must in calculating  ROI since we are considering net p
 
 Having made up the hypothesis, it was time to test it with data science.
 
-For rankings, there are many sources, including prominent ones such as US news and Forbes. I ultimately decided to go with [niche.com](https://www.niche.com/colleges/search/best-value-colleges/) because it is free and has the largest number of schools (2000+) and ranking categories (dozens, including academics, athletics, student life, political leaning, etc.).
+For rankings, there are many sources, including prominent ones such as US news and Forbes. I ultimately decided to go with [niche.com](https://www.niche.com/colleges/search/best-value-colleges/) because it is free and has the largest number of schools (2000+) and ranking categories (dozens, including overall, academics, athletics, student life, political leaning, etc.).
 
 For ROI, there isn't a perfect source. The best available and most widely used is from [payscale.com](https://www.payscale.com/college-roi), despite its flaws such as selection bias as data is self reported by users or that 4 year completion rate is not accounted for. So this is where I got ROI information.
 
