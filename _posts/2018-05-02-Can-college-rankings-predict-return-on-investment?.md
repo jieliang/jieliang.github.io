@@ -3,6 +3,8 @@ layout: post
 title: Can College Rankings Predict Return On Investment?
 ---
 
+### The case of college ROI
+
 Going to college is  one of the most important decisions in life. As a parent, I was interested in finding out what might  predict the return on this investment.
 
 The first thought came to mind was college rankings. After all, if a college ranks high, wouldn't it suggest students receive better eduction and thus likely to earn more after graduation? 
