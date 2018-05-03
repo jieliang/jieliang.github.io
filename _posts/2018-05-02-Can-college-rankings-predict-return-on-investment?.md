@@ -32,4 +32,4 @@ To improve the prediction, for next steps I will try adding different features l
 
 So, What the main takeaway from my investigation?
 
-Don't base college decision on rankings if your goal is to maximize ROI!
+__Don't base college decision on rankings if your goal is to maximize ROI!__
